@@ -1,0 +1,244 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #262626;
+}
+
+a{
+  text-decoration: none;
+  color: aqua;
+}
+
+a:hover{
+  color: #ff00ee;
+}
+
+.nav{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border-bottom: 2px solid lightseagreen;
+  position: fixed;
+}
+
+.devconf{
+  color:aqua;
+  font-weight: bold;
+}
+
+.menu{
+  display: flex;
+  gap:50px;
+  color: aqua;  
+}
+
+i{
+  display: none;
+}
+
+.home{
+  /* font-size: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 4vw; */
+  
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #99f617 0%,
+    #ff00ee 29%,
+    #57cfff 67%,
+    #ff328b 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 80px;
+      padding: 9vw;
+      font-family: cursive;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+#buttonimg{
+  background-color:#E40046;
+  padding: 20px;
+  font-size: 1.5vw;
+  border-radius: 20px;
+  color: rgb(0, 255, 255);
+  box-shadow: 2px 2px 2px lightseagreen;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#nitjmainbuildingimg{
+
+  height: 400px;
+  width: 400px;
+  margin-right:40px;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  box-shadow: 2px 2px 30px yellow;
+
+}
+
+.about{
+  display: flex;
+  font-family: cursive;
+  padding: 30px;
+  margin-top: 4vw;
+  border: 2px solid rgb(238, 255, 139);
+  border-radius: 60px;
+  box-shadow: 2px 2px 50px #6affeeee;
+}
+
+h2 , thead{
+  text-decoration: underline;
+  color: lightgreen;
+  text-shadow: 2px 2px 1px deeppink;
+}
+
+.nitjdescription{
+  padding: 3px;
+  color: #68ffde;
+}
+td{
+  color: rgb(240, 128, 216);
+}
+
+.serialno{
+  color: antiquewhite;
+}
+table{
+  border: 2px solid #09d0a5;
+  border-radius: 2vw;
+  margin: 1vw;
+}
+.sponsorstable{
+  margin: 2px;
+}
+
+#sponsorsjs{
+  display: flex;
+  margin-top: 9vw;
+  padding: 2vw;
+  border: 2px solid rgb(238, 255, 139);
+  border-radius: 30px;
+  box-shadow: 2px 2px 50px #6affeeee;
+}
+.sponsorsdescripton{
+  color: #68ffde;
+}
+
+.Locationdescription{
+  color: #68ffde;
+}
+.location{
+  margin: 4vw;
+  padding: 1vw;
+  border: 2px solid rgb(238, 255, 139);
+  border-radius: 20px;
+  box-shadow: 2px 2px 50px #6affeeee;
+}
+
+#footerjs{
+  display: flex;
+  margin-top: 8vw;
+  border: 2px solid rgb(238, 255, 139);
+  border-radius: 20px;
+  box-shadow: 2px 2px 50px #6affeeee;
+  margin-bottom: 40px;
+}
+.vl {
+  border-left: 6px solid rgb(255, 4, 230);
+  height: 500px;
+}
+
+.footerphoto{
+  margin: 40px;
+  /* border: 2px solid rgb(238, 255, 139);
+  border-radius: 20px;
+  box-shadow: 2px 2px 50px #6affeeee; */
+  height: 300px;
+  width:700px;
+  
+}
+
+.footerdescription{
+  color: #68ffde;
+  margin-left: 30px;
+  margin-top: 40px;
+  
+}
+@media (max-width:600px) {
+
+  .nav{
+    position: relative;
+  }
+  
+
+  h4{
+    display: none;
+    height: 20px;
+  }
+  i{
+    display: none;
+    font-size: 6vw;
+  }
+
+  .home{
+    padding-top: 40px;
+    flex-wrap: wrap;
+    
+  }
+
+  .animate-charcter{
+    font-size: 40px;
+  }
+
+  #nitjmainbuildingimg{
+    height: 90%;
+    width: 90%;
+    padding: 2%;
+    margin-left: 18px;
+  }
+  .button{
+    margin-top: 30px;
+    
+  }
+  .about{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footerjs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #verticalline{
+    display: none;
+  }
+  
+}
